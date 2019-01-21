@@ -67,3 +67,12 @@ C:\Users\Usuario\documents\visual studio 2015\Projects\Vodly\Vodly\bin\Microsoft
 C:\Users\Usuario\documents\visual studio 2015\Projects\Vodly\Vodly\obj\Debug\Vodly.csprojResolveAssemblyReference.cache
 C:\Users\Usuario\documents\visual studio 2015\Projects\Vodly\Vodly\obj\Debug\Vodly.dll
 C:\Users\Usuario\documents\visual studio 2015\Projects\Vodly\Vodly\obj\Debug\Vodly.pdb
+C:\Users\Usuario\documents\visual studio 2015\Projects\Vodly\Vodly\obj\Debug\Vodly.Migrations.InitialMigration.resources
+C:\Users\Usuario\documents\visual studio 2015\Projects\Vodly\Vodly\obj\Debug\Vodly.csproj.GenerateResource.Cache
+C:\Users\Usuario\documents\visual studio 2015\Projects\Vodly\Vodly\obj\Debug\Vodly.Migrations.addingIsSubscribeToCustomer.resources
+C:\Users\Usuario\documents\visual studio 2015\Projects\Vodly\Vodly\obj\Debug\Vodly.Migrations.addMemmbershipType.resources
+C:\Users\Usuario\documents\visual studio 2015\Projects\Vodly\Vodly\obj\Debug\Vodly.Migrations.PopulateMembership.resources
+C:\Users\Usuario\documents\visual studio 2015\Projects\Vodly\Vodly\obj\Debug\Vodly.Migrations.applyanotationtocustomername.resources
+C:\Users\Usuario\documents\visual studio 2015\Projects\Vodly\Vodly\obj\Debug\Vodly.Migrations.addingNameToMemberShipType.resources
+C:\Users\Usuario\documents\visual studio 2015\Projects\Vodly\Vodly\obj\Debug\Vodly.Migrations.seedingMembershitypeNameProperty.resources
+C:\Users\Usuario\documents\visual studio 2015\Projects\Vodly\Vodly\obj\Debug\Vodly.Migrations.addingBirthDayToCustomer.resources
