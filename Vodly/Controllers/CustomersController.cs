@@ -3,6 +3,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Vodly.Models;
+using Vodly.ViewModels;
 
 namespace Vodly.Controllers
 {
@@ -33,6 +34,23 @@ namespace Vodly.Controllers
                 return View("CustomerDetail", item);
             else
                 return HttpNotFound();
+        }
+
+        public ActionResult New()
+        {
+            var memberShipTypes = _context.MemberShipTypes.ToList();
+            var viewModel = new NewCustomerViewModel {
+                MemberShipTypes = memberShipTypes
+            };
+            return View("NewCustomer",viewModel);
+        }
+
+        [HttpPost]
+        public ActionResult Create(Customer customer)
+        {
+            _context.Customers.Add(customer);
+            _context.SaveChanges();
+            return RedirectToAction("Index", "Customers");
         }
     }
 }

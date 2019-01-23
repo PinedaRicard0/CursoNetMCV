@@ -1,0 +1,24 @@
+﻿@model Vodly.Models.Movie
+
+@{
+    ViewBag.Title = "MovieDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    @if (Model != null)
+    {
+        <h2>@Model.Name</h2>
+        <ul>
+            <li>@Html.Label("Genre: ") @Model.Genre.Name</li>
+            <li>@Html.Label("Release Date: ") @Model.ReleaseDate.ToLongDateString()</li>
+            <li>@Html.Label("Added Date: ") @Model.DateAdded.ToLongDateString()</li>
+            <li>@Html.Label("Quantity in stock: ") @Model.StockQuantity</li>
+            
+        </ul>
+    }
+    else
+    {
+        <h2>Doesn´t exist any customer!!</h2>
+    }
+</div>

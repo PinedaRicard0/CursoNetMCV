@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 
 namespace Vodly.Models
 {
@@ -15,6 +12,7 @@ namespace Vodly.Models
         public DateTime? Birthday { get; set; }
         public bool IsSubscribeToNewsLetter { get; set; }
         public MemberShipType MemberShipType { get; set; }
+        [Display(Name="Membar Ship Type")]
         public byte MemberShipTypeId { get; set; }
     }
 }
