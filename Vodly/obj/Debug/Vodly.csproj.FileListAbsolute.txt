@@ -161,3 +161,4 @@ C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\obj\Debug\Vodly.Migrations.changingSom
 C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\obj\Debug\Vodly.Migrations.addingForeingkey.resources
 C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\obj\Debug\Vodly.Migrations.tales.resources
 C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\obj\Debug\Vodly.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\obj\Debug\Vodly.Migrations.deletingrequiredfrommovie.resources
