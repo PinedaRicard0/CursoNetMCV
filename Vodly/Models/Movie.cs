@@ -17,6 +17,7 @@ namespace Vodly.Models
         public DateTime DateAdded { get; set; }
         [Required]
         [Display(Name = "Stock Quantity")]
+        [Range(1,100,ErrorMessage = "Enter a value between 0 and 100")]
         public int StockQuantity { get; set; }
         [Required]
         public Genre Genre { get; set; }

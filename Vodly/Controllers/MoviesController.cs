@@ -55,27 +55,40 @@ namespace Vodly.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Save(Movie movie)
         {
-            var genreInDB = _context.Genres.SingleOrDefault(g => g.Id == movie.GenreId);
-            
-            if (movie.Id == 0)
+            if (ModelState.IsValid)
             {
-                movie.Genre = genreInDB;
-                movie.DateAdded = DateTime.Now;
-                _context.Movies.Add(movie);
-            }
-            else {
-                var movieInDb = _context.Movies.Single(m => m.Id == movie.Id);
-                movieInDb.Name = movie.Name;
-                movieInDb.ReleaseDate = movie.ReleaseDate;
-                movieInDb.GenreId = movie.GenreId;
-                movieInDb.StockQuantity = movie.StockQuantity;
-                movieInDb.Genre = genreInDB;
-            }         
-            _context.SaveChanges();
+                var genreInDB = _context.Genres.SingleOrDefault(g => g.Id == movie.GenreId);
 
-            return RedirectToAction("Index");
+                if (movie.Id == 0)
+                {
+                    movie.Genre = genreInDB;
+                    movie.DateAdded = DateTime.Now;
+                    _context.Movies.Add(movie);
+                }
+                else
+                {
+                    var movieInDb = _context.Movies.Single(m => m.Id == movie.Id);
+                    movieInDb.Name = movie.Name;
+                    movieInDb.ReleaseDate = movie.ReleaseDate;
+                    movieInDb.GenreId = movie.GenreId;
+                    movieInDb.StockQuantity = movie.StockQuantity;
+                    movieInDb.Genre = genreInDB;
+                }
+                _context.SaveChanges();
+
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                var viewModel = new MovieFormViewModel {
+                    Movie = movie,
+                    MoviesGenre = _context.Genres.ToList()
+                };
+                return View("MoviesForm", viewModel);
+            }
         }
     }
 }
