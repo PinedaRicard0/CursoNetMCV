@@ -162,3 +162,11 @@ C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\obj\Debug\Vodly.Migrations.addingForei
 C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\obj\Debug\Vodly.Migrations.tales.resources
 C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\obj\Debug\Vodly.csprojResolveAssemblyReference.cache
 C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\obj\Debug\Vodly.Migrations.deletingrequiredfrommovie.resources
+C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\bin\System.Net.Http.Formatting.dll
+C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\bin\System.Web.Http.dll
+C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\bin\System.Web.Http.WebHost.dll
+C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\bin\System.Net.Http.Formatting.xml
+C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\bin\System.Web.Http.xml
+C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\bin\System.Web.Http.WebHost.xml
+C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\bin\AutoMapper.dll
+C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\bin\AutoMapper.xml
