@@ -6,18 +6,19 @@
 }
 
 <div class="container">
-
-    @Html.ActionLink("Add Customer", "New","Customers",null, new { @class= "btn btn btn-success", style="margin-top:20px;"})
+    <div>
+        @Html.ActionLink("Add Customer", "New", "Customers", null, new { @class = "btn btn btn-success", style = "margin-top:20px;" })
     </div>
     @if (Model.Count() > 0)
     {
         <h2>Customers List</h2>
-        <table class="table table-bordered table-hover">
+        <table id ="tblCustomers"class="table table-bordered table-hover">
             <thead>
                 <tr>
                     <th>Customers</th>
                     <th>Member Ship Type</th>
                     <th>Discount rate</th>
+                    <th>Delete</th>
                 </tr>
             </thead>
             <tbody>
@@ -27,6 +28,9 @@
                         <td>@Html.ActionLink(item.Name, "Edit", new { id = item.Id })</td>
                         <td>@item.MemberShipType.Name</td>
                         <td>@item.MemberShipType.DiscountRate%</td>
+                        <td>
+                            <button data-customer-id="@item.Id"  class="btn-link js-delete">Delete</button>
+                        </td>
                     </tr>
                 }
             </tbody>
@@ -38,3 +42,24 @@
         <h2>Doesn´t exist any customer!!</h2>
     }
 </div>
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $("#tblCustomers .js-delete").on("click", ".js-delete" ,function () {
+                var button = $(this);
+                bootbox.confirm("Are you sure you want to delete this customer?",
+                    function (result) {
+                        if (result) {
+                            $.ajax({
+                                url: "/api/customers/" + button.attr("data-customer-id"),
+                                method: "DELETE",
+                                success: function () {
+                                    button.parents("tr").remove();
+                                }
+                            });
+                        }
+                    });
+            });
+        });
+    </script>
+    }
