@@ -19,7 +19,6 @@ namespace Vodly.Models
         [Display(Name = "Stock Quantity")]
         [Range(1,100,ErrorMessage = "Enter a value between 0 and 100")]
         public int StockQuantity { get; set; }
-        [Required]
         public Genre Genre { get; set; }
         [Display(Name = "Genre")]
         public int GenreId { get; set; }
