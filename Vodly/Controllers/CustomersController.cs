@@ -23,8 +23,7 @@ namespace Vodly.Controllers
         // GET: Customers
         public ViewResult Index()
         {
-            var customers = _context.Customers.Include(c => c.MemberShipType).ToList();
-            return View(customers);
+            return View();
         }
 
         public ActionResult CustomerDetail(int id)

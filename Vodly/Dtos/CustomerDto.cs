@@ -22,5 +22,7 @@ namespace Vodly.Dtos
         public bool IsSubscribeToNewsLetter { get; set; }
 
         public byte MemberShipTypeId { get; set; }
+
+        public MemberShipTypeDto MemberShipType { get; set; }
     }
 }

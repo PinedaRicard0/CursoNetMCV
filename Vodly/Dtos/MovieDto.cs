@@ -20,7 +20,7 @@ namespace Vodly.Dtos
 
         [Range(1, 100, ErrorMessage = "Enter a value between 0 and 100")]
         public int StockQuantity { get; set; }
-
+        public GenreDto Genre { get; set; }
         public int GenreId { get; set; }
     }
 }
