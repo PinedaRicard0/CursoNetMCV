@@ -40,6 +40,7 @@ namespace Vodly.Controllers.Api
         }
 
         [System.Web.Http.HttpPost]
+        [System.Web.Http.Authorize(Roles = RoleName.CanManageMovies)]
         public IHttpActionResult CreateMovie(MovieDto movieDto)
         {
             if (!ModelState.IsValid)
@@ -54,6 +55,7 @@ namespace Vodly.Controllers.Api
         }
 
         [System.Web.Http.HttpPut]
+        [System.Web.Http.Authorize(Roles = RoleName.CanManageMovies)]
         public void UpdateMovie(int id, MovieDto movieDto)
         {
             if (!ModelState.IsValid)
@@ -68,6 +70,7 @@ namespace Vodly.Controllers.Api
         }
 
         [System.Web.Http.HttpDelete]
+        [System.Web.Http.Authorize(Roles = RoleName.CanManageMovies)]
         public void DeleteCustomer(int id)
         {
             var MovieInDB = _context.Movies.SingleOrDefault(m => m.Id == id);

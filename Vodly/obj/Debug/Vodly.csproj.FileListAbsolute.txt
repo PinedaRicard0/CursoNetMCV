@@ -170,3 +170,6 @@ C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\bin\System.Web.Http.xml
 C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\bin\System.Web.Http.WebHost.xml
 C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\bin\AutoMapper.dll
 C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\bin\AutoMapper.xml
+C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\obj\Debug\Vodly.Migrations.seedUsers.resources
+C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\obj\Debug\Vodly.Migrations.addDrivingLicenseToApplicationUser.resources
+C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\obj\Debug\Vodly.Migrations.addingPhoneToApplicationUser.resources

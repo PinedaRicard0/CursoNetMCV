@@ -1,0 +1,48 @@
+﻿@*@model IEnumerable<Vodly.Models.Movie>*@
+@{
+    ViewBag.Title = "Movies";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+        <h2>Movies List</h2>
+        <table id="moviesTbl" class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Movie</th>
+                    <th>Genre</th>
+                </tr>
+            </thead>
+            <tbody>
+                @*@foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.ActionLink(item.Name, "EditMovie", new { id = item.Id })</td>
+                        <td>@item.Genre.Name</td>
+                    </tr>
+                }*@
+            </tbody>
+
+        </table>
+</div>
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            var tabla = $("#moviesTbl").DataTable({
+                ajax : {
+                    url: "/api/movies",
+                    dataSrc: ""
+                },
+                columns: [
+                    {
+                        data : "name"
+                    },
+                    {
+                        data : "genre.name"
+                    }
+                ]
+            });
+        });
+    </script>
+}
+

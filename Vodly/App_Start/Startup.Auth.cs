@@ -55,8 +55,8 @@ namespace Vodly
             //   consumerSecret: "");
 
             //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            //   appId: "411738546263686",
+            //   appSecret: "ce20ecd6fe6b8a90b309d15992e00117");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
