@@ -18,8 +18,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
-    <IISExpressSSLPort>
-    </IISExpressSSLPort>
+    <IISExpressSSLPort>44390</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -189,6 +188,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Api\CustomersController.cs" />
     <Compile Include="Controllers\Api\MoviesController.cs" />
+    <Compile Include="Controllers\Api\NewRentalController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -197,6 +197,7 @@
     <Compile Include="Dtos\GenreDto.cs" />
     <Compile Include="Dtos\MemberShipTypeDto.cs" />
     <Compile Include="Dtos\MovieDto.cs" />
+    <Compile Include="Dtos\NewRentalDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -276,6 +277,14 @@
     <Compile Include="Migrations\201902221508259_addingPhoneToApplicationUser.Designer.cs">
       <DependentUpon>201902221508259_addingPhoneToApplicationUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201902221914541_addingRentalTable.cs" />
+    <Compile Include="Migrations\201902221914541_addingRentalTable.Designer.cs">
+      <DependentUpon>201902221914541_addingRentalTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902221957323_AddingAvailableQuantityAtributteOnMovie.cs" />
+    <Compile Include="Migrations\201902221957323_AddingAvailableQuantityAtributteOnMovie.Designer.cs">
+      <DependentUpon>201902221957323_AddingAvailableQuantityAtributteOnMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -286,6 +295,7 @@
     <Compile Include="Models\MemberShipType.cs" />
     <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\Rental.cs" />
     <Compile Include="Models\RegisterViewModel.cs" />
     <Compile Include="Models\RoleName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -602,6 +612,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201902221508259_addingPhoneToApplicationUser.resx">
       <DependentUpon>201902221508259_addingPhoneToApplicationUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902221914541_addingRentalTable.resx">
+      <DependentUpon>201902221914541_addingRentalTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902221957323_AddingAvailableQuantityAtributteOnMovie.resx">
+      <DependentUpon>201902221957323_AddingAvailableQuantityAtributteOnMovie.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -22,5 +22,6 @@ namespace Vodly.Models
         public Genre Genre { get; set; }
         [Display(Name = "Genre")]
         public int GenreId { get; set; }
+        public int AvailableQuantity { get; set; }
     }
 }

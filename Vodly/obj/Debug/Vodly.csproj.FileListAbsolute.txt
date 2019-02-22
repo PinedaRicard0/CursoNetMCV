@@ -173,3 +173,5 @@ C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\bin\AutoMapper.xml
 C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\obj\Debug\Vodly.Migrations.seedUsers.resources
 C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\obj\Debug\Vodly.Migrations.addDrivingLicenseToApplicationUser.resources
 C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\obj\Debug\Vodly.Migrations.addingPhoneToApplicationUser.resources
+C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\obj\Debug\Vodly.Migrations.addingRentalTable.resources
+C:\Users\Lenovo\Desktop\CursoNetMCV\Vodly\obj\Debug\Vodly.Migrations.AddingAvailableQuantityAtributteOnMovie.resources
